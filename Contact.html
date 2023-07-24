@@ -10,6 +10,12 @@
 
     <title>Gaurang Enterprises</title>
   </head>
+<script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "thankyou.html";
+    };
+</script>
+
     <style>
     input[type=text], select, textarea {
       width: 100%;
@@ -72,7 +78,7 @@
   <center><h2>Write us</h2></center>
   <div class="container my-3">
 
-    <form action="mail.php" method="POST">
+    <form action="thankyou.html" method="POST">
 
       <label for="fname">First Name</label>
       <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -98,7 +104,7 @@
       <label for="subject">Subject</label>
       <textarea id="subject" name="subject" placeholder="How can we help..." style="height:200px"></textarea>
 
-      <center><input type="submit" value="Submit"><center>
+      <center><a aria-current="page"  href="thankyou.html"><input type="submit"></a><center>
       </form>
     </div>
     <footer class="page-footer font-small unique-color-dark">
